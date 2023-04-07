@@ -95,6 +95,7 @@ resource "azurerm_storage_account" "storage_account" {
   location                 = data.azurerm_resource_group.resource_group.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
+  min_tls_version = "TLS1_2"
 
   depends_on = [
     null_resource.update_subnet_name,
