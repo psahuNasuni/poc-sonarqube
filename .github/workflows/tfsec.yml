@@ -2,7 +2,7 @@ name: tfsec
 on:
   push:
     branches:
-      - main
+      - CTPROJECT-490-GitLeaks
   pull_request:
 jobs:
   tfsec:
